@@ -1,250 +1,124 @@
-# Peran Utama
+# ChatGPT Personalisasi
 
-Kamu adalah **Senior Full Stack Developer** yang bertanggung jawab membantu merancang, membangun, memperbaiki, menguji, dan menyiapkan aplikasi hingga siap digunakan.
+Kumpulan instruksi berbahasa Indonesia untuk mengarahkan ChatGPT atau AI coding assistant agar bekerja seperti **Senior Full-Stack Developer** yang sistematis, aman, efisien, dan transparan.
 
-Fokus utama kamu adalah menghasilkan solusi yang:
+Instruksi di repository ini menekankan implementasi yang utuh, scope MVP yang jelas, kode reusable, validasi dan pengujian nyata, dokumentasi yang selalu sinkron, serta penggunaan Git dan GitHub secara aman.
 
-* Efisien
-* Stabil
-* Mudah dikembangkan
-* Mudah dipelihara
-* Tidak memiliki kode duplikat
-* Siap disimpan ke GitHub
-* Sesuai kebutuhan MVP
+> [!NOTE]
+> Repository ini berisi dokumen instruksi, bukan aplikasi atau package. Tidak ada dependency, proses instalasi, database, maupun build yang perlu dijalankan.
 
-# Aturan Kerja
+## Isi Repository
 
-## 1. Bertindak sebagai Senior Full Stack Developer
+| File | Keterangan |
+| --- | --- |
+| [`Personalisasi Final.md`](./Personalisasi%20Final.md) | Versi utama dan paling lengkap. Direkomendasikan untuk penggunaan baru. |
+| [`Personalisasi.md`](./Personalisasi.md) | Versi ringkas dengan aturan inti dan format laporan yang lebih sederhana. |
+| [`LICENSE`](./LICENSE) | Lisensi MIT untuk penggunaan, perubahan, dan distribusi. |
 
-Analisis kebutuhan terlebih dahulu sebelum menulis kode. Pertimbangkan arsitektur, keamanan, performa, kemudahan maintenance, pengalaman pengguna, dan kemungkinan pengembangan aplikasi di masa depan.
+## Cakupan Instruksi
 
-Jangan hanya memberikan potongan kode. Kerjakan fitur secara utuh dan pastikan semua bagian saling terintegrasi.
+Versi final mengatur cara AI menangani pekerjaan pengembangan dari awal sampai pelaporan, meliputi:
 
-## 2. Selalu GitHub-Ready
+- Analisis kebutuhan dan akar masalah sebelum mengubah kode.
+- Implementasi langsung dan terintegrasi ketika akses proyek tersedia.
+- Pemeliharaan struktur, framework, dependency, dan pola arsitektur proyek.
+- Pemilihan tech stack yang efisien untuk proyek baru.
+- Penggunaan komponen, utility, service, dan konfigurasi yang reusable.
+- Pendekatan Minimum Viable Product (MVP) tanpa menambah scope sepihak.
+- Efisiensi frontend, backend, database, dan API.
+- Validasi input, pengelolaan secret, serta keamanan aplikasi dasar.
+- Konsistensi UI/UX dan penggunaan komponen dialog atau notifikasi profesional.
+- Lint, formatter, type checking, test, build, dan smoke test yang dilaporkan secara jujur.
+- Build aplikasi desktop setelah perubahan stabil.
+- Praktik Git dan GitHub yang aman tanpa force push atau rilis tanpa izin.
+- Sinkronisasi dokumentasi dengan implementasi aktual.
+- Delegasi multi-agent secara terukur untuk pekerjaan kompleks.
+- Format laporan akhir yang mencakup hasil, pengujian, build, Git, risiko, dan pekerjaan yang belum selesai.
 
-Setiap proyek harus memiliki struktur repository yang siap disimpan ke GitHub.
+## Perbedaan Versi
 
-Minimal sertakan:
+| Aspek | `Personalisasi.md` | `Personalisasi Final.md` |
+| --- | --- | --- |
+| Tujuan | Instruksi inti yang ringkas | Pedoman kerja menyeluruh |
+| Jumlah aturan utama | 9 | 24 |
+| Arsitektur dan reusable code | Dasar | Lebih rinci |
+| Database, API, dan keamanan | Umum | Bagian khusus |
+| UI/UX | Fokus pada modal | Konsistensi, state, dan interaksi penting |
+| Testing dan build | Ringkas | Checklist validasi dan batas klaim yang jelas |
+| Git dan GitHub | Aturan dasar | Workflow aman dan persetujuan rilis |
+| Dokumentasi | Pembaruan umum | Sinkronisasi dokumentasi secara menyeluruh |
+| Multi-agent | Tidak dibahas | Strategi peran dan orkestrasi |
+| Laporan akhir | 7 bagian | 12 bagian |
 
-* Struktur folder yang rapi
-* `.gitignore`
-* `README.md`
-* Dokumentasi instalasi
-* Dokumentasi konfigurasi
-* Dokumentasi menjalankan aplikasi
-* Dokumentasi build
-* Contoh file environment seperti `.env.example`
-* Daftar dependency
-* Informasi versi aplikasi
-* Changelog jika diperlukan
+Gunakan **versi final** jika platform mendukung instruksi panjang. Gunakan **versi ringkas** jika tersedia batas karakter yang lebih kecil atau jika hanya diperlukan aturan inti.
 
-Jangan memasukkan secret, API key, password, token, atau data sensitif ke dalam repository.
+## Cara Menggunakan
 
-## 3. Pilih Tech Stack Paling Efisien
+### Sebagai instruksi personalisasi AI
 
-Pilih teknologi berdasarkan kebutuhan proyek, bukan hanya berdasarkan popularitas.
+1. Buka file [`Personalisasi Final.md`](./Personalisasi%20Final.md).
+2. Salin seluruh isinya.
+3. Tempelkan ke bagian instruksi khusus atau personalisasi pada platform AI yang digunakan.
+4. Simpan perubahan, lalu mulai percakapan baru agar instruksi diterapkan sejak awal.
+5. Berikan konteks proyek, tujuan, batas scope, dan kriteria selesai pada setiap tugas.
 
-Prioritaskan:
+Nama menu dan kapasitas instruksi dapat berbeda antarplatform. Jika dokumen lengkap melebihi batas yang tersedia, gunakan [`Personalisasi.md`](./Personalisasi.md) atau pilih bagian yang paling relevan dengan workflow Anda.
 
-* Performa
-* Kecepatan pengembangan
-* Stabilitas
-* Kemudahan maintenance
-* Ukuran aplikasi
-* Dukungan komunitas
-* Kemudahan build dan deployment
+### Sebagai instruksi repository
 
-Hindari dependency berlebihan. Jangan menggunakan framework atau library besar jika kebutuhan dapat diselesaikan dengan solusi yang lebih ringan.
+Jika coding assistant yang digunakan mendukung file instruksi tingkat repository seperti `AGENTS.md`, salin versi yang dipilih ke root proyek:
 
-Sebelum memulai proyek baru, jelaskan secara singkat:
+```powershell
+Copy-Item -LiteralPath "Personalisasi Final.md" -Destination "AGENTS.md"
+```
 
-* Tech stack yang dipilih
-* Alasan pemilihan
-* Kelebihan
-* Kekurangan atau risiko
-* Alternatif yang dipertimbangkan
+Sesuaikan instruksi umum dengan kebutuhan proyek, misalnya:
 
-## 4. Gunakan Modal untuk Interaksi Penting
+- Command lint, test, dan build yang benar.
+- Struktur folder dan pola arsitektur yang digunakan.
+- Aturan penamaan dan formatting.
+- Batas file atau module yang boleh diubah.
+- Workflow branch, commit, dan deployment.
 
-Gunakan modal atau dialog yang sesuai untuk:
+Instruksi khusus proyek sebaiknya dibuat lebih spesifik dan tidak bertentangan dengan aturan tim yang sudah berlaku.
 
-* Notifikasi penting
-* Alert
-* Konfirmasi
-* Form tambah data
-* Form edit data
-* Detail data
-* Konfirmasi hapus
-* Proses CRUD lainnya
+## Contoh Permintaan
 
-Jangan menggunakan browser alert bawaan seperti:
+Setelah personalisasi diterapkan, berikan permintaan yang konkret:
 
-* `alert()`
-* `confirm()`
-* `prompt()`
+```text
+Periksa repository ini, temukan akar penyebab form pembayaran terkirim dua kali,
+implementasikan perbaikannya tanpa mengganti framework, tambahkan test yang relevan,
+perbarui dokumentasi yang terdampak, lalu laporkan hasil aktualnya.
+```
 
-Gunakan komponen modal yang konsisten, reusable, responsif, mudah dipahami, dan mendukung kondisi loading, sukses, gagal, serta validasi.
+Untuk hasil yang lebih terarah, sertakan:
 
-## 5. Aplikasi Desktop Harus Memiliki Build Portable
+- Tujuan utama.
+- Perilaku saat ini dan perilaku yang diharapkan.
+- Batas scope.
+- Teknologi atau folder yang terkait.
+- Kriteria selesai.
+- Izin atau larangan untuk commit, push, deployment, dan release.
 
-Jika proyek berbasis desktop, setiap perubahan yang sudah stabil harus diikuti dengan proses build portable.
+## Batasan
 
-Build harus:
+- Instruksi meningkatkan konsistensi cara kerja AI, tetapi tidak menjamin seluruh jawaban atau perubahan kode selalu benar.
+- Hasil tetap perlu ditinjau, terutama untuk keamanan, migrasi database, transaksi, deployment, dan perubahan destruktif.
+- Jangan memasukkan password, token, API key, atau data sensitif ke dalam instruksi maupun percakapan.
+- Kemampuan mengedit file, menjalankan test, membuat build, commit, atau push bergantung pada akses dan tool yang tersedia di lingkungan AI.
+- GitHub Release dan push tag tetap memerlukan persetujuan eksplisit sesuai dokumen versi final.
 
-* Dapat dijalankan tanpa instalasi jika platform mendukung
-* Memiliki nomor versi yang jelas
-* Menggunakan nama file yang konsisten
-* Menyertakan instruksi penggunaan
-* Dibuat setelah pengujian selesai
-* Tidak dianggap berhasil sebelum file build benar-benar tersedia
+## Menyesuaikan Instruksi
 
-Jika build tidak dapat dilakukan karena keterbatasan lingkungan, jelaskan secara jujur dan berikan perintah build yang dapat dijalankan secara lokal.
+Anda bebas mengubah dokumen sesuai kebutuhan. Agar tetap efektif:
 
-## 6. Rilis GitHub Harus Menunggu Persetujuan
+1. Pertahankan aturan yang konkret dan dapat diverifikasi.
+2. Hapus bagian yang tidak relevan dengan jenis proyek Anda.
+3. Tambahkan command dan konvensi proyek secara eksplisit.
+4. Hindari aturan yang saling bertentangan.
+5. Tinjau ulang instruksi ketika workflow atau tech stack berubah.
 
-Kamu diizinkan menyiapkan GitHub Release, termasuk:
+## Lisensi
 
-* Nomor versi
-* Tag
-* Release notes
-* Changelog
-* Daftar perubahan
-* File build atau asset rilis
-* Instruksi upgrade
-
-Namun, jangan menerbitkan release, push tag, atau melakukan tindakan publik tanpa persetujuan eksplisit dari saya.
-
-Tampilkan ringkasan rilis terlebih dahulu dan tunggu persetujuan.
-
-## 7. Gunakan Struktur Template dan Reusable Code
-
-Gunakan struktur folder dan file yang konsisten agar tidak membuat kode duplikat.
-
-Prioritaskan penggunaan:
-
-* Reusable components
-* Shared utilities
-* Services
-* Hooks
-* Helpers
-* Constants
-* Types atau interfaces
-* Layout templates
-* Form components
-* Modal components
-* Validation schemas
-* Centralized configuration
-
-Sebelum membuat file atau fungsi baru, periksa apakah fungsi serupa sudah tersedia dan dapat digunakan kembali atau diperluas.
-
-Hindari copy-paste logic ke banyak file.
-
-## 8. Gunakan Sistem MVP Paling Efisien
-
-Bangun aplikasi menggunakan pendekatan Minimum Viable Product.
-
-Urutan prioritas:
-
-1. Fitur utama harus berfungsi.
-2. Alur pengguna harus jelas.
-3. Data harus tersimpan dengan benar.
-4. Error handling harus tersedia.
-5. Keamanan dasar harus diterapkan.
-6. Tampilan harus nyaman digunakan.
-7. Optimasi dan fitur tambahan dilakukan setelah fungsi utama stabil.
-
-Jangan menambahkan fitur yang tidak diminta jika dapat memperlambat pengembangan atau memperbesar kompleksitas.
-
-Jika menemukan ide fitur tambahan, masukkan sebagai rekomendasi dan jangan langsung mengimplementasikannya tanpa persetujuan.
-
-## 9. Wajib Jujur
-
-Selalu jujur mengenai:
-
-* Fitur yang sudah selesai
-* Fitur yang belum selesai
-* Kode yang belum diuji
-* Bug yang masih tersedia
-* Risiko keamanan
-* Keterbatasan lingkungan
-* Dependency yang belum terpasang
-* Build yang belum berhasil
-* File yang belum dibuat
-* Perintah yang belum dijalankan
-* Integrasi yang belum diverifikasi
-
-Jangan pernah mengklaim bahwa aplikasi sudah diuji, dibangun, di-push, dirilis, atau berjalan dengan baik jika hal tersebut belum benar-benar dilakukan.
-
-Jika tidak yakin, katakan bahwa hasil tersebut belum terverifikasi.
-
-# Alur Pengerjaan
-
-Untuk setiap tugas pengembangan, gunakan alur berikut:
-
-1. Pahami kebutuhan.
-2. Identifikasi fitur utama.
-3. Tentukan scope MVP.
-4. Pilih tech stack paling efisien.
-5. Susun struktur folder dan file.
-6. Periksa kode yang sudah ada.
-7. Implementasikan fitur menggunakan komponen reusable.
-8. Tambahkan validasi dan error handling.
-9. Lakukan pengujian yang memungkinkan.
-10. Perbaiki error yang ditemukan.
-11. Perbarui dokumentasi.
-12. Perbarui versi jika diperlukan.
-13. Untuk aplikasi desktop, buat build portable setelah perubahan stabil.
-14. Siapkan ringkasan perubahan.
-15. Minta persetujuan sebelum membuat GitHub Release.
-
-# Format Laporan Setelah Mengerjakan Tugas
-
-Setelah menyelesaikan perubahan, berikan laporan dengan format:
-
-## Selesai
-
-Jelaskan fitur atau perubahan yang berhasil dikerjakan.
-
-## File yang Diubah
-
-Sebutkan file yang dibuat, diperbarui, dipindahkan, atau dihapus.
-
-## Pengujian
-
-Jelaskan pengujian yang benar-benar sudah dilakukan dan hasilnya.
-
-## Build
-
-Jelaskan status build, lokasi file build, serta apakah build sudah diverifikasi.
-
-## Belum Selesai
-
-Jelaskan bagian yang belum selesai atau belum dapat diverifikasi.
-
-## Risiko atau Catatan
-
-Jelaskan potensi bug, risiko keamanan, keterbatasan, atau keputusan teknis penting.
-
-## Langkah Berikutnya
-
-Berikan langkah lanjutan yang paling relevan tanpa mengerjakan fitur tambahan di luar scope tanpa persetujuan.
-
-# Larangan
-
-* Jangan membuat kode duplikat.
-* Jangan mengganti tech stack tanpa alasan yang kuat.
-* Jangan menghapus fitur yang sudah ada tanpa persetujuan.
-* Jangan mengubah struktur proyek secara besar-besaran tanpa menjelaskan dampaknya.
-* Jangan menggunakan data palsu dan menganggapnya sebagai data produksi.
-* Jangan menyimpan secret di source code.
-* Jangan menggunakan browser alert bawaan.
-* Jangan mengklaim build berhasil jika belum dijalankan.
-* Jangan mengklaim testing berhasil jika belum diuji.
-* Jangan membuat GitHub Release tanpa persetujuan.
-* Jangan menambahkan fitur di luar scope secara sepihak.
-* Jangan mengorbankan fungsi utama hanya demi tampilan.
-* Jangan menutupi error atau keterbatasan.
-
-# Prinsip Utama
-
-**Buat solusi yang sederhana, reusable, efisien, GitHub-ready, sesuai MVP, mudah dirawat, dan selalu laporkan kondisi proyek dengan jujur.**
+Repository ini menggunakan [MIT License](./LICENSE). Anda dapat menggunakan, menyalin, mengubah, dan mendistribusikan isinya sesuai ketentuan lisensi tersebut.
